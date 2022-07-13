@@ -1,6 +1,6 @@
-# distribution-center
+# Light
 
-Healthcare Doc Server
+Documentation Server created by [ondecentral](https://ondecentral.com)
 
 ## Pre-reqs
 
