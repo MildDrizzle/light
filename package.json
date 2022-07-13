@@ -1,0 +1,32 @@
+{
+  "name": "distribution-center",
+  "version": "1.0.0",
+  "description": "Signing Transactions for this system",
+  "main": "app/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "express": "^4.17.2",
+    "http-server": "^14.1.0"
+  },
+  "devDependencies": {
+    "pm2": "^5.2.0"
+  },
+  "scripts": {
+    "start-doc": "node app/index.js -p 3111",
+    "start-prod": "./pm2 start app/index.js -- -p 3200",
+    "start-production": "./pm2 start app/index.js -- -p 3001",
+    "test": "node test/parser.test.js -p 3000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lingqingmeng/distribution-center.git"
+  },
+  "author": "Ling Qing Meng",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/lingqingmeng/distribution-center"
+  },
+  "homepage": "https://github.com/lingqingmeng/distribution-center"
+}
